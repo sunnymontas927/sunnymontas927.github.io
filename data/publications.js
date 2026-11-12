@@ -32,10 +32,10 @@ const GEO = "Geophysics", GJI = "Geophysical Journal International", GP = "Geoph
 
 window.JOURNALS = [
   // ---- 2026 ----
-  { y: 2026, a: ["Zhijun Cheng", "Xiang Wang", "Guojun Mao", WM, SC], t: "Meta-transfer learning for efficient initialization of neural network wavefield solutions", v: JAG, d: "106116" },
-  { y: 2026, a: ["Huan Song", SC, HT, WO, WM], t: "Adaptive self-supervised surface-related multiple suppression", v: "arXiv:2604.27069", s: "Under review, IEEE TGRS", link: "https://arxiv.org/abs/2604.27069" },
-  { y: 2026, a: [HT, SC, WM, HZ, "Yingying Zhang"], t: "Incorporating wave physical priors into diffusion models: A novel approach to seismic resolution enhancement", v: SIG },
-  { y: 2026, a: [HT, SC, WO, WM], t: "Attenuating multi-source noise in DAS-VSP data: A self-supervised learning approach with enhanced noise extraction", v: "Big Data and Earth System", d: "100062" },
+  { y: 2026, a: ["Zhijun Cheng", "Xiang Wang", "Guojun Mao", WM, SC + "*"], t: "Meta-transfer learning for efficient initialization of neural network wavefield solutions", v: JAG, d: "106116" },
+  { y: 2026, a: ["Huan Song", SC + "*", HT, WO, WM], t: "Adaptive self-supervised surface-related multiple suppression", v: "arXiv:2604.27069", s: "Under review, IEEE TGRS", link: "https://arxiv.org/abs/2604.27069" },
+  { y: 2026, a: [HT, SC + "*", WM, HZ, "Yingying Zhang"], t: "Incorporating wave physical priors into diffusion models: A novel approach to seismic resolution enhancement", v: SIG },
+  { y: 2026, a: [HT, SC + "*", WO, WM], t: "Attenuating multi-source noise in DAS-VSP data: A self-supervised learning approach with enhanced noise extraction", v: "Big Data and Earth System", d: "100062" },
   { y: 2026, a: [SC, TA], t: "Generative wave propagator", v: "arXiv preprint", s: "Under review, GJI" },
   { y: 2026, a: [SC, TA], t: "Propagating the prior from far to near offset: A self-supervised diffusion framework for progressively recovering near-offsets of towed-streamer data", v: "arXiv:2602.01909", s: "Under review, Geophysics", link: "https://arxiv.org/abs/2602.01909" },
   { y: 2026, a: [SC, RH, MT, TA], t: "Depth-progressive 3D seismic velocity model building via 2D generative diffusion models", v: "arXiv:2610.14812", s: "Under review, Geophysics", link: "https://arxiv.org/abs/2610.14812" },
@@ -43,7 +43,7 @@ window.JOURNALS = [
   { y: 2026, a: [SC, RH, TA], t: "Shallow-to-deep velocity model building via diffusion models. Part II: Realistic scenarios", v: "arXiv:2609.26482", s: "Under review, Geophysics", link: "https://arxiv.org/abs/2609.26482", code: "https://github.com/DeepWave-KAUST/DiffVMB-pub" },
   { y: 2026, a: [SC, XM, TA], t: "Physics-informed conditional diffusion model for generalizable elastic wave-mode separation", v: GEO, s: "Accepted" },
   { y: 2026, a: [SC, MT, TA], t: "Seismic wavefield solutions via physics-guided generative neural operator", v: GEO, d: "91(5), F13", link: "https://pubs.geoscienceworld.org/seg/geophysics/article/91/5/F13/734313/Seismic-wavefield-solutions-via-physics-guided", code: "https://github.com/DeepWave-KAUST/GNO-pub" },
-  { y: 2026, a: ["Zefeng Wang", SC, WM, WO, HT], t: "Meta-learning-enhanced implicit full waveform inversion", v: GP },
+  { y: 2026, a: ["Zefeng Wang", SC + "*", WM, WO, HT], t: "Meta-learning-enhanced implicit full waveform inversion", v: GP },
 
   // ---- 2025 ----
   { y: 2025, a: ["Lingli Gao", WM, "Qianru Xu", WO, "Shaokang Yang", SC + "*"], t: "Inhomogeneous plane waves in attenuative anisotropic porous media", v: GJI },
