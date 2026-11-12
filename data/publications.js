@@ -32,6 +32,7 @@ const GEO = "Geophysics", GJI = "Geophysical Journal International", GP = "Geoph
 
 window.JOURNALS = [
   // ---- 2026 ----
+  { y: 2026, a: [SC, "Ning Wang", TA], t: "Self-supervised surface-related multiple suppression with multidimensional convolution", v: GEO, s: "Accepted", link: "https://arxiv.org/abs/2505.00419", code: "https://github.com/DeepWave-KAUST/SSL-Multiples-Attenuation-pub"},
   { y: 2026, a: ["Zhijun Cheng", "Xiang Wang", "Guojun Mao", WM, SC + "*"], t: "Meta-transfer learning for efficient initialization of neural network wavefield solutions", v: JAG, d: "106116" , link: "https://www.sciencedirect.com/science/article/pii/S0926985126000248", code: "https://github.com/chengzhijun-czj/MTPINN"},
   { y: 2026, a: ["Huan Song", SC + "*", HT, WO, WM], t: "Adaptive self-supervised surface-related multiple suppression", v: "arXiv:2604.27069", s: "Under review in IEEE TGRS", link: "https://arxiv.org/abs/2604.27069" },
   { y: 2026, a: [HT, SC + "*", WM, HZ, "Yingying Zhang"], t: "Incorporating wave physical priors into diffusion models: A novel approach to seismic resolution enhancement", v: SIG, link: "https://link.springer.com/article/10.1007/s10712-026-09965-4" },
@@ -55,7 +56,6 @@ window.JOURNALS = [
   { y: 2025, a: [SC, TA], t: "Meta learning for improved neural network wavefield solutions", v: SIG, link: "https://link.springer.com/article/10.1007/s10712-024-09872-6", code: "https://github.com/sunnymontas927/Meta-PINN" },
   { y: 2025, a: [SC, TA], t: "Multifrequency wavefield solutions for variable velocity models using meta-learning enhanced low-rank physics-informed neural network", v: GJI, d: "244(1), ggaf417", link: "https://academic.oup.com/gji/article/244/1/ggaf417/8292609", code: "https://github.com/DeepWave-KAUST/Meta-LRPINN-pub" },
   { y: 2025, a: [SC, RH, TA], t: "A generative foundation model for an all-in-one seismic processing framework", v: SIG, link: "https://link.springer.com/article/10.1007/s10712-025-09912-9", code: "https://github.com/DeepWave-KAUST/GSFM_pub" },
-  { y: 2025, a: [SC, "Ning Wang", TA], t: "Self-supervised surface-related multiple suppression with multidimensional convolution", v: "arXiv:2505.00419", s: "Under review in Geophysics", link: "https://arxiv.org/abs/2505.00419", code: "https://github.com/DeepWave-KAUST/SSL-Multiples-Attenuation-pub"},
   { y: 2025, a: [SC, HZ, TA], t: "Self-supervised seismic resolution enhancement", v: TGRS, link: "https://ieeexplore.ieee.org/abstract/document/10839093", code: "https://github.com/DeepWave-KAUST/SSL-Resolution-Enhancement" },
   { y: 2025, a: [QZ, SC + "*", "Wei Chen", WM], t: "Well- and structure-constrained initial velocity building for full-waveform inversion via a generative diffusion model", v: TGRS, link: "https://ieeexplore.ieee.org/abstract/document/11058942" },
 
