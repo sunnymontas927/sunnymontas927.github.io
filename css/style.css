@@ -1,0 +1,79 @@
+/* Shared styles for shijun cheng's site.
+   Colours: page #070B10, panel #0D131A, line #1E2730, text #E6EDF3,
+   muted #9AA7B4, accent #7FDBD0 (cyan), highlight #F2A93B (amber). */
+
+html { scroll-behavior: smooth; background: #070B10; }
+body { margin: 0; background: #070B10; color: #E6EDF3; font-family: Inter, system-ui, sans-serif; }
+a { color: #7FDBD0; }
+a:hover { color: #FFFFFF; }
+a:focus-visible { outline: 2px solid #7FDBD0; outline-offset: 3px; border-radius: 3px; }
+[id] { scroll-margin-top: 24px; }
+img { max-width: 100%; }
+
+/* Hero diagram animation */
+@keyframes flowA { to { stroke-dashoffset: -36; } }
+@keyframes pulseA { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+.flowA { stroke-dasharray: 3 9; animation: flowA 1.8s linear infinite; }
+.nodeA { animation: pulseA 2.6s ease-in-out infinite; }
+.nodeB { animation: pulseA 2.6s ease-in-out .9s infinite; }
+.nodeC { animation: pulseA 2.6s ease-in-out 1.8s infinite; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .flowA, .nodeA, .nodeB, .nodeC { animation: none; }
+}
+
+/* ---------- Shared layout pieces (used by publications.html) ---------- */
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.display { font-family: 'Space Grotesk', sans-serif; }
+
+.site-nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 28px 0; }
+.site-nav .brand { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #FFFFFF; text-decoration: none; }
+.site-nav .brand span { color: #8FA0B0; font-weight: 500; }
+.site-nav .links { display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; }
+.site-nav .links a { color: #C5D0DA; text-decoration: none; padding: 12px 0; }
+.site-nav .links a:hover, .site-nav .links a[aria-current="page"] { color: #FFFFFF; }
+
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; padding: 40px 0 56px; border-top: 1px solid #1E2730; font-size: 14px; color: #9AA7B4; margin-top: 72px; }
+.site-footer .who { display: flex; flex-direction: column; gap: 6px; }
+.site-footer .who strong { color: #E6EDF3; font-weight: 600; }
+.site-footer .links { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+.site-footer .links a { padding: 12px 0; }
+
+/* ---------- News list on the homepage ---------- */
+.news-item { display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid #1E2730; }
+.news-item .date { flex: 0 0 110px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #F2A93B; }
+.news-item .text { flex: 1 1 240px; font-size: 16px; line-height: 1.5; color: #E6EDF3; }
+
+/* ---------- Publications page ---------- */
+.page-head { padding: 56px 0 40px; display: flex; flex-direction: column; gap: 20px; }
+.page-head .kicker { font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #7FDBD0; }
+.page-head h1 { margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 7vw, 80px); line-height: 1; letter-spacing: -0.02em; color: #FFFFFF; }
+.page-head p { margin: 0; max-width: 680px; font-size: 18px; line-height: 1.65; color: #B4C0CC; }
+
+.tabs { display: flex; flex-wrap: wrap; gap: 12px; padding-bottom: 8px; }
+.tabs button { font: 600 15px Inter, system-ui, sans-serif; min-height: 44px; padding: 10px 20px; border-radius: 6px; border: 1px solid #3A4654; background: transparent; color: #E6EDF3; cursor: pointer; }
+.tabs button:hover { border-color: #7FDBD0; }
+.tabs button[aria-pressed="true"] { background: #7FDBD0; border-color: #7FDBD0; color: #070B10; }
+.tabs button:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 3px; }
+
+.pub-section { padding: 40px 0 0; }
+.pub-section > h2 { margin: 0 0 8px; font-family: 'IBM Plex Mono', monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.12em; color: #8FA0B0; text-transform: uppercase; }
+.year-group { display: flex; flex-wrap: wrap; gap: 0 40px; padding: 28px 0 8px; border-top: 1px solid #1E2730; margin-top: 20px; }
+.year-group > h3 { flex: 0 0 90px; margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px; color: #F2A93B; }
+.year-group > ol { flex: 1 1 520px; min-width: 0; list-style: none; margin: 0; padding: 0; }
+.pub { padding: 0 0 26px; display: flex; flex-direction: column; gap: 6px; }
+.pub .title { font-size: 17px; font-weight: 600; line-height: 1.4; color: #FFFFFF; }
+.pub .authors { font-size: 14.5px; line-height: 1.55; color: #9AA7B4; }
+.pub .authors b { color: #E6EDF3; font-weight: 600; }
+.pub .venue { font-size: 14.5px; line-height: 1.5; color: #B4C0CC; }
+.pub .venue em { font-style: italic; color: #E6EDF3; }
+.pub .status { display: inline-block; margin-left: 8px; padding: 1px 8px; border: 1px solid #3A4654; border-radius: 999px; font-size: 12px; color: #F2A93B; white-space: nowrap; }
+.pub .pub-links { display: flex; flex-wrap: wrap; gap: 0 20px; font-size: 14px; }
+.pub .pub-links a { padding: 8px 0; }
+.note { font-size: 14px; color: #9AA7B4; padding-top: 8px; }
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 20px; }
+  .site-nav .links { gap: 6px 20px; }
+}
